@@ -183,11 +183,16 @@ void Ejercicio3(){
 			num1=devolver_numero(temp,4);
 			num2=devolver_numero(temp2,4);
 			resp=num1-num2;
-			cout<<num1<<" - "<<num2<<" = "<<resp;
+			cout<<num1<<" - "<<num2<<" = "<<resp<<endl;
+			readArray2(temp,4,resp);
+			readArray2(temp2,4,resp);
+			arreglarArreglo(temp,4);
+	                arreglarArregloMenor(temp2,4);
 
 		}while(resp!=6174);
 	}
 	freeArray(temp);
+	freeArray(temp2);
 
 	
 }
