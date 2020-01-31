@@ -182,7 +182,7 @@ void Ejercicio3(){
 		do{
 			num1=devolver_numero(temp,4);
 			num2=devolver_numero(temp2,4);
-			resp=num1-num2;
+			resp=num2-num1;
 			cout<<num1<<" - "<<num2<<" = "<<resp<<endl;
 			readArray2(temp,4,resp);
 			readArray2(temp2,4,resp);
