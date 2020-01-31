@@ -21,10 +21,11 @@ void readArray(int*,int);
 void arreglarArreglo(int*, int);
 
 void Ejercicio3();
-void readArray2(int*,int,int);
+void readArray2(int*,int,int);//leer el numero de cuatro digitos
 int num_iguales(int*,int);
 void arreglarArregloMenor(int*, int);
 int devolver_numero(int*, int);
+void readArray3(int*,int,int);//agregar ceros
 
 int main(){
 	int resp=-1;
@@ -205,6 +206,7 @@ void readArray2(int* array,int size, int num){
 	}
 }
 
+
 int num_iguales(int* arreglo, int size){
 	int resp = 0;
 	for(int i=0; i<size; i++){
@@ -233,6 +235,29 @@ void arreglarArregloMenor(int* arreglo, int size){
 int devolver_numero(int* arreglo, int size){
 	int num=0;
 	for(int i=0; i<size; i++){
+		if(size==4){
+			switch(i){
+                        	case 0:
+                                	num+=arreglo[i]*1000;
+                                	break;
+
+                       		 case 1:
+                	                num+=arreglo[i]*100;
+        	                        break;
+				 case 2:
+                                	num+=arreglo[i]*10;
+                                	break;
+
+				case 3:
+                	                num+=arreglo[i];
+        	                        break;
+	                }
+
+		}
+		if(size==3){
+		}
+		if(size==2){
+		}
 		switch(i){
 			case 0:
 				num+=arreglo[i]*1000;
