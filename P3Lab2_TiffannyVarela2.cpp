@@ -177,10 +177,15 @@ void Ejercicio3(){
 		cout<<"Numero invalido"<<endl;
 	}
 	else{
-		cout<<"Numero valido"<<endl;
 		arreglarArreglo(temp,4);
 	        arreglarArregloMenor(temp2,4);
+		do{
+			num1=devolver_numero(temp,4);
+			num2=devolver_numero(temp2,4);
+			resp=num1-num2;
+			cout<<num1<<" - "<<num2<<" = "<<resp;
 
+		}while(resp!=6174);
 	}
 	freeArray(temp);
 
