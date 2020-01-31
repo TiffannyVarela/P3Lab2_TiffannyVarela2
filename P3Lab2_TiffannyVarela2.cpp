@@ -164,7 +164,7 @@ void Ejercicio3(){
 	int num;
 	int* temp=inicializar(4);
 	int* temp2=inicializar(4);
-
+	int num1, num2, resp;
 	cout<<"Ingrese un numero de 4 digitos: ";
 	cin>>num;
 	while(num<1234||num>9999){
@@ -173,7 +173,6 @@ void Ejercicio3(){
 	}
 	readArray2(temp,4,num);
 	readArray2(temp2,4,num);
-//	printArray(temp,4);
 	if(num_iguales(temp,4)==-1){
 		cout<<"Numero invalido"<<endl;
 	}
@@ -181,6 +180,7 @@ void Ejercicio3(){
 		cout<<"Numero valido"<<endl;
 		arreglarArreglo(temp,4);
 	        arreglarArregloMenor(temp2,4);
+
 	}
 	freeArray(temp);
 
@@ -243,13 +243,4 @@ int devolver_numero(int* arreglo, int size){
 	}
 	return num;
 }
-
-
-/*int val_negativos( int num){
-	while(num<<0){
-		cout<<"Ingrese un numero positivo: ";
-		cin>>num;
-	}
-	return num;
-}*/
 
