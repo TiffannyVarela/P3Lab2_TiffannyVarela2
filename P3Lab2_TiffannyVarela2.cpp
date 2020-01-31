@@ -181,10 +181,6 @@ void Ejercicio3(){
 	}
 	arreglarArreglo(temp,4);
 	arreglarArregloMenor(temp2,4);
-//	cout<<"Arreglo1"<<endl;
-//	printArray(temp,4);
-//	cout<<"Arreglo2"<<endl;
-//	printArray(temp2,4);
 //	cout<<"Numero 1  es: "<<devolver_numero(temp,4)<<endl;
 //	cout<<"Numero 2  es: "<<devolver_numero(temp2,4)<<endl;
 	freeArray(temp);
