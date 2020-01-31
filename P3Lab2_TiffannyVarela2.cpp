@@ -235,29 +235,6 @@ void arreglarArregloMenor(int* arreglo, int size){
 int devolver_numero(int* arreglo, int size){
 	int num=0;
 	for(int i=0; i<size; i++){
-		if(size==4){
-			switch(i){
-                        	case 0:
-                                	num+=arreglo[i]*1000;
-                                	break;
-
-                       		 case 1:
-                	                num+=arreglo[i]*100;
-        	                        break;
-				 case 2:
-                                	num+=arreglo[i]*10;
-                                	break;
-
-				case 3:
-                	                num+=arreglo[i];
-        	                        break;
-	                }
-
-		}
-		if(size==3){
-		}
-		if(size==2){
-		}
 		switch(i){
 			case 0:
 				num+=arreglo[i]*1000;
